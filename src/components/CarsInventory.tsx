@@ -262,7 +262,9 @@ export function CarsInventory() {
 
               {/* Mobile filter button */}
               <button
-                onClick={() => setMobileFilterOpen(!mobileFilterOpen)}
+                onClick={() => setMobileFilterOpen((isOpen) => !isOpen)}
+                aria-expanded={mobileFilterOpen}
+                aria-controls="advanced-filters"
                 className="lg:hidden flex items-center gap-1.5 px-3 py-2 bg-[#141822] border border-[#242c3d] rounded-xl text-xs text-neutral-200"
               >
                 <SlidersHorizontal className="w-3.5 h-3.5 text-[#C89D5C]" />
@@ -330,9 +332,8 @@ export function CarsInventory() {
         {/* Advanced filter studio */}
         <div className="space-y-8">
           <aside
-            className={`advanced-filter-panel grid grid-cols-1 gap-5 rounded-[1.5rem] border border-[#d7ebc9] bg-[#f7fff0] p-5 shadow-[0_16px_45px_-36px_rgba(57,255,20,.7)] md:grid-cols-2 xl:grid-cols-5 ${
-              mobileFilterOpen ? "grid" : "hidden"
-            } lg:grid`}
+            id="advanced-filters"
+            className={`advanced-filter-panel ${mobileFilterOpen ? "grid" : "hidden"} grid-cols-1 gap-5 rounded-[1.5rem] border border-[#d7ebc9] bg-[#f7fff0] p-5 shadow-[0_16px_45px_-36px_rgba(57,255,20,.7)] md:grid-cols-2 xl:grid-cols-5 lg:grid`}
           >
             <div className="flex flex-col justify-between border-b border-[#d8ead4] pb-4 xl:col-span-5 xl:flex-row xl:items-center">
               <div className="flex items-center gap-2">
@@ -347,6 +348,7 @@ export function CarsInventory() {
                   Reset all filters
                 </button>
               )}
+              <button onClick={() => setMobileFilterOpen(false)} className="mt-3 rounded-lg bg-[#B6FF00] px-3 py-2 text-left text-xs font-bold text-[#111815] lg:hidden">Show {sortedVehicles.length} cars</button>
             </div>
 
             {/* Make */}

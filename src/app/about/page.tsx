@@ -30,20 +30,19 @@ export default function AboutPage() {
         </div>
 
         {/* Hero Visual Image */}
-        <div className="relative aspect-[21/9] w-full rounded-3xl overflow-hidden border border-[#232b3b] shadow-2xl">
+        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl border border-[#d8ead4] bg-[#f7fff0] shadow-[0_24px_56px_-42px_rgba(17,24,21,.5)] sm:aspect-[16/8]">
           <Image
             src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1600&q=80"
             alt="Atandi Motors Showroom Display"
             fill
             priority
-            className="object-cover brightness-75"
+            className="object-cover object-[center_55%]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0d0f14] via-transparent to-transparent" />
-          <div className="absolute bottom-6 left-6 sm:bottom-10 sm:left-10 z-10 space-y-1">
-            <span className="text-xs font-mono uppercase tracking-wider text-[#C89D5C] font-semibold">
+          <div className="absolute bottom-4 left-4 z-10 rounded-2xl border border-[#d8ead4] bg-white/95 px-4 py-3 shadow-lg sm:bottom-8 sm:left-8">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#2f8f28]">
               Showroom Presence
             </span>
-            <h2 className="text-xl sm:text-2xl font-bold text-white">
+            <h2 className="mt-1 text-lg font-bold text-[#111815] sm:text-xl">
               Kiambu Road, Nairobi, Kenya
             </h2>
           </div>
@@ -146,10 +145,10 @@ export default function AboutPage() {
         </div>
 
         {/* CTA to Showroom */}
-        <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-[#161d28] to-[#12161f] border border-[#273244] flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="flex flex-col items-center justify-between gap-6 rounded-3xl border border-[#d8ead4] bg-[#f7fff0] p-8 sm:p-12 md:flex-row">
           <div>
-            <h3 className="text-2xl font-bold text-white">Ready to inspect our vehicles in person?</h3>
-            <p className="text-sm text-neutral-300 mt-1">
+            <h3 className="text-2xl font-bold text-[#111815]">Ready to inspect our vehicles in person?</h3>
+            <p className="mt-1 text-sm text-[#111815]">
               Visit our showroom opposite Ridgeways Mall, Kiambu Road, Nairobi.
             </p>
           </div>
@@ -157,7 +156,7 @@ export default function AboutPage() {
           <div className="flex items-center gap-3 shrink-0">
             <Link
               href="/cars"
-              className="px-6 py-3 rounded-xl bg-[#C89D5C] hover:bg-[#b88c4b] text-neutral-950 font-bold text-sm transition-all"
+              className="rounded-xl bg-[#B6FF00] px-6 py-3 text-sm font-bold text-[#111815] transition-all hover:bg-[#39FF14]"
             >
               Browse Inventory
             </Link>
@@ -165,7 +164,7 @@ export default function AboutPage() {
               href={getWhatsAppUrl("Hello Atandi Motors, I would like to schedule a visit to your Kiambu Road showroom.")}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm transition-all flex items-center gap-2"
+              className="flex items-center gap-2 rounded-xl bg-[#39a629] px-5 py-3 text-sm font-semibold text-white transition-all hover:bg-[#2f8f28]"
             >
               <MessageSquare className="w-4 h-4" />
               WhatsApp Us
