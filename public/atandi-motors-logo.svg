@@ -1,0 +1,9 @@
+<svg width="318" height="72" viewBox="0 0 318 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="2" y="2" width="68" height="68" rx="22" fill="#B6FF00"/>
+  <path d="M19 55L29.5 17H42.5L53 55H43L36 27.5L29 55H19Z" fill="#173E28"/>
+  <path d="M36 33V52" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M36 20V25" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="36" cy="58" r="3" fill="#173E28"/>
+  <text x="88" y="37" fill="#111815" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" letter-spacing="-1.2">atandi</text>
+  <text x="89" y="55" fill="#2F8F28" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="2.25">MOTORS · NAIROBI</text>
+</svg>
